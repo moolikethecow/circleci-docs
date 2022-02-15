@@ -16,7 +16,6 @@ export function expandImageOnClick() {
 
   for (let i = 0; i < images.length; i++) {
     let img = images[i];
-
     // and attach our click listener for this image.
     img.onclick = function () {
       modal.classList.remove('hidden');
