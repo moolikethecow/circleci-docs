@@ -1,6 +1,16 @@
+= Tutorial
+
 == Introduction
 
 == Prerequisites
 
+=== Tools
+
 * minikube
+* Docker, Hyperkit, or other virtual machine manager
 * kubectl
+
+=== Knowledge
+
+* Basic understanding of Kubernetes
+* Familarity with using CLI

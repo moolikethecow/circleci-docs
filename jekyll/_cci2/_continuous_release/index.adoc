@@ -17,7 +17,7 @@ docs@circleci.com
 
 :leveloffset: +1
 include::tutorial.adoc[]
-include::existing-applications.adoc[]
+include::releasing-applications.adoc[]
 include::concepts.adoc[]
 
 :leveloffset: -1
