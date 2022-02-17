@@ -2,7 +2,7 @@
 docs@circleci.com
 :media: screen
 :title-page-background-image: image:pdf-header.png[]
-:imagesdir: ../assets/img/docs/
+:imagesdir: ../../assets/img/docs/
 :doctype: book
 :toc:
 :toc-title: Contents
