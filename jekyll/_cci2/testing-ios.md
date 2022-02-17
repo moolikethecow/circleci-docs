@@ -52,7 +52,7 @@ Running or testing Apple Silicon apps natively is currently not possible as Circ
 
  Config   | Xcode Version                   | macOS Version | macOS UI Testing Supported | Software Manifest | Release Notes
 ----------|---------------------------------|---------------|----------------------------|-------------------|--------------
- `13.3.0` | Xcode 13.3 Beta 1 (13E5086k) | 12.2 | Yes | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v6844/index.html) | [Release Notes](https://discuss.circleci.com/t/macos-monterey-xcode-13-3-beta-1-released/42791)
+ `13.3.0` | Xcode 13.3 Beta 2 (13E5095k) | 12.2 | Yes | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v6900/index.html) | [Release Notes](https://discuss.circleci.com/t/macos-monterey-xcode-13-3-beta-2-released/42919)
  `13.2.1` | Xcode 13.2.1 (13C100) | 11.6.2 | Yes | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v6690/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-13-2-1-released/42334)
  `13.1.0` | Xcode 13.1 (13A1030d) | 11.6.1 | Yes | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v6269/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-13-1-rc-released/41577)
  `13.0.0` | Xcode 13.0 (13A233) | 11.5.2 | Yes | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v6052/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-13-rc-released/41256)
@@ -66,8 +66,10 @@ Running or testing Apple Silicon apps natively is currently not possible as Circ
  `11.6.0` | Xcode 11.6 (11E708) | 10.15.5 | No | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v3299/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-11-6-released/36777/2)
  `11.5.0` | Xcode 11.5 (11E608c)    | 10.15.4 | No | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v2960/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-11-5-gm-released/36029/4)
  `11.4.1` | Xcode 11.4.1 (11E503a)    | 10.15.4 | No | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v2750/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-11-4-1-released/35559/2)
- `10.3.0` | Xcode 10.3 (10G8)         | 10.14.4 | No | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v1925/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-10-3-image-released/31561)
+ `10.3.0` | Xcode 10.3 (10G8)<sup>(1)</sup>         | 10.14.4 | No | [Installed software](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v1925/index.html) | [Release Notes](https://discuss.circleci.com/t/xcode-10-3-image-released/31561)
 {: class="table table-striped"}
+
+<sup>(1)</sup> _Xcode 10.3 is unsupported by our dedicated hosts. See the [Dedicated Host for macOS]({{ site.baseurl }}/2.0/dedicated-hosts-macos) page to learn more about this resource class._
 
 ## Getting started
 {: #getting-started }
@@ -519,7 +521,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 To update Cocoapods to the latest stable version, simply update the Ruby gem with the following command:
 
-```
+```shell
 sudo gem install cocoapods
 ```
 
