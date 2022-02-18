@@ -30,10 +30,21 @@ A service in Continuous Release represents a superset of Kubernetes artifacts: a
 
 ====
 
-
-
 == Releases
 
+There is significant confusion between the terms _deploy_ and _release_. The two terms refer to different acts, one technical and one business-driven.
+
+The key distinction between a _deployment_ and a _release_ is the business purpose.
+
+A deploy or deployment includes all the technical activities needed to make an application or feature available for use. For example, a fresh Docker container running in a Pod on a Kubernetes cluster. The software has passed all checks and tests in your CI/CD pipeline and is ready to receive traffic from production users, but it is not yet receiving any traffic. This part of the process just ensures the new version is healthy and running smoothly, it does not incur any the risk involved in serving production traffic. Based on this definition, _deploying_ software is a risk-free activity.
+
+A release comes _after_ a deployment and includes all the activities needed to move part, or all, of production traffic to the new version. All the business risks and problems (such as downtime, lost revenue, and unhappy customers) are related to the _release_, not to the deployment. _Releasing_ software is riskier than _deploying_ software. You may choose to release a new version as soon as it is deployed into production, but that should be a conscious business decision.
+
+When done correctly, deploying a new version of a microservice to production should have no direct impact on your users' experience. You want your users to enjoy the new features and improvements, thereby getting greater value from your product.
+
+However, there is always a risk the new version will deliver a degraded user experience. This could be the result of technical issues, or perhaps because your users do not like the product features and improvements in that new version.
+
+Continuous Release provides you with the tools to manage that risk. This feature simultaneously protects your users' experience and ensures new microservices versions are truly delivering additional business value.
 
 == Policies
 
