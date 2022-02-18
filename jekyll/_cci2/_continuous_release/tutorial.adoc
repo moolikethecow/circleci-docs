@@ -6,11 +6,25 @@
 
 === Tools
 
-* minikube
 * Docker, Hyperkit, or other virtual machine manager
+* minikube
 * kubectl
+
+==== Virtual machine manager
+
+Before you can use minikube, you will need to install a virtual machine manager, such as https://hub.docker.com/search?q=&type=edition&offering=community&sort=updated_at&order=desc[Docker]. For more information on virtual machine managers, https://minikube.sigs.k8s.io/docs/start/[see the minikube guide].
+
+==== minikube
+
+Minikube allows you to quickly set up a local Kubernetes cluster on macOS, Linux, or Windows. It is designed to help you learn, develop, and test your applications.
+
+To download minikube, follow the https://minikube.sigs.k8s.io/docs/start/[installation guide].
+
+==== kubectl
+
+Kubectl is the Kubernetes command-line tool. It allows you to run commands on Kubernetes clusters. To download kubectl, follow the https://kubernetes.io/docs/tasks/tools/[instructions on the installation guide].
 
 === Knowledge
 
 * Basic understanding of Kubernetes
-* Familarity with using CLI
+* Familiarity with using the CLI
