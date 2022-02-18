@@ -1,4 +1,4 @@
-= Concepts
+= Continuous Release Concepts
 
 == Applications
 
@@ -48,8 +48,22 @@ Continuous Release provides you with the tools to manage that risk. This feature
 
 == Policies
 
+A _policy_ is a set of rules that defines how a version of a service should be validated when it is added to an application. If the policy conditions are not met, the new version is rolled back, with minimal impact on your users' experience.
 
-== Deployments
+In Site Reliability Engineering (SRE) terms, a policy validates that a new version of a service complies with the Service Level Objectives (SLOs) defined for that service.
 
+Continuous Release currently supports validation-only policies.
 
-== Metrics
+=== Validation-Only Policies
+
+A validation-only policy defines the set validation rules to objectively test whether a version of a service meets its objectives.
+
+Validation-only policies are employed for services that use a Kubernetes rolling update strategy. This means validation-only policies can be used with services that:
+
+* Are deployed using a Kubernetes StatefulSet, or
+* Are deployed using a Kubernetes Deployment, or
+* Do not expose a REST-based API or a GraphQL-based API, for example, message-based APIs.
+
+Validation-only policies rely on calling a user-defined webhook to roll back a failed version. If the newly released version passes all the tests defined in the policy, it remains as the live version. 
+
+If validation of the newly deployed version of the service fails for any reason, Continuous Release calls a webhook to roll back the service to the previous version. Typically, this webhook triggers an action on a CD pipeline.
