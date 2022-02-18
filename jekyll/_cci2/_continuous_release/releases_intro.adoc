@@ -1,0 +1,5 @@
+= Introduction
+
+The Continuous Release documentation introduces you to the main concepts you need to get it working for you.
+
+The documentation includes an overview of the main concepts used in Continuous Release and a Getting Started guide.
