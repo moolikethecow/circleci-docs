@@ -1,0 +1,27 @@
+= Concepts
+
+== Applications
+
+Conceptually, an application is a collection of microservices sharing a single Kubernetes Namespace.
+
+Continuous Release also allows you to release across multiple Kubernetes clusters and multiple cloud providers. In this case, an _application_ is a unique combination of a Kubernetes cluster and a Namespace name.
+
+NOTE: The Continuous Release definition of an application differs from the Kubernetes definition. In Kubernetes, an application is a single workload, plus configuration data.
+
+DTAP (Development, Test, Acceptance, and Production) is a traditional way of splitting up your environments and is typically used in monolithic application development.
+
+In Continuous Release, your Development, Test, Acceptance, and Production environments are different applications. For example, the Development, Test and Acceptance applications might share one cluster, with Production using a separate cluster. The different applications typically share the same microservices, but with different versions, and need to be updated sequentially.
+
+== Services
+
+
+== Releases
+
+
+== Policies
+
+
+== Deployments
+
+
+== Metrics

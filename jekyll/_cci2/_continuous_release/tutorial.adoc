@@ -2,6 +2,8 @@
 
 == Introduction
 
+What we'll cover in this tutorial.
+
 == Prerequisites
 
 === Tools
@@ -22,9 +24,19 @@ To download minikube, follow the https://minikube.sigs.k8s.io/docs/start/[instal
 
 ==== kubectl
 
-Kubectl is the Kubernetes command-line tool. It allows you to run commands on Kubernetes clusters. To download kubectl, follow the https://kubernetes.io/docs/tasks/tools/[instructions on the installation guide].
+Kubectl is the Kubernetes command-line tool. It allows you to run commands on Kubernetes clusters. To download kubectl, follow the https://kubernetes.io/docs/tasks/tools/[instructions on the installation guide]. Alternatively, if you have Homebrew installed, type `brew install kubectl` at the CLI.
 
 === Knowledge
 
 * Basic understanding of Kubernetes
 * Familiarity with using the CLI
+
+== Using minikube and kubectl/setting up minikube
+
+Checking everything is installed, e.g. minikube status and kubectl (maybe kubectl get all?)
+
+Start command.
+
+Troubleshooting, e.g. if minikube hangs
+
+Prometheus
