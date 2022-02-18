@@ -14,6 +14,23 @@ In Continuous Release, your Development, Test, Acceptance, and Production enviro
 
 == Services
 
+In Continuous Release, a _service_ represents a single microservice.
+
+Throughout its lifetime, a service will go through multiple versions. At any time, there may be multiple instances of a given version running in different _applications_.
+
+As a _service_ can span multiple versions and multiple applications, you can track and compare the performance and reliability of your microservices. You can do this either individually, or as interdependent microservices within an application.
+
+[NOTE]
+====
+The Continuous Release definition of a service differs significantly from the definition of a Kubernetes Service.
+
+Kubernetes defines a Service as a network service, an abstract way to expose a set of Pods using a single DNS name and a load balancing strategy.
+
+A service in Continuous Release represents a superset of Kubernetes artifacts: a Kubernetes workload (a Deployment or a StatefulSet) plus, optionally, a Kubernetes Service.
+
+====
+
+
 
 == Releases
 
